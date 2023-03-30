@@ -1,7 +1,8 @@
-# AInsight-Server
+# Web Server Example
+### Included Services:
 - Web Service
 - Data API Service
-- ***Not Include AI Service***
+- Supported RDBMS
 
 ## Build
 - `make build`
@@ -10,7 +11,7 @@
 
 ## Execute
 - `make execute`
-- or `cd ./bin; ./AInsight-Server.exe`
+- or `cd ./bin; ./go-web-server-example.exe`
 
 ## .env Example
 ```env
