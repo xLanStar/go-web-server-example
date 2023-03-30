@@ -1,19 +1,23 @@
 # Web Server Example
+
+### Better and faster way to use Gin framework
+
 ### Included Services:
 - Web Service
 - Data API Service
 - Supported RDBMS
 
-## Build
+## How to use
+### Build
 - `make build`
 - or `go build -o bin`
 - output folder: bin
 
-## Execute
+### Execute
 - `make execute`
 - or `cd ./bin; ./go-web-server-example.exe`
 
-## .env Example
+### .env Example
 ```env
 # Web 服務
 WEB_HOST=

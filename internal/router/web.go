@@ -36,10 +36,6 @@ func NewWebRouter(WebRoot, storageRoot string) *WebRouter {
 	return router
 }
 
-func Test(c *gin.Context) {
-	fmt.Println("Test Middleware")
-}
-
 func (engine *WebRouter) Init() {
 	// Use Gzip
 	engine.Engine.Use(gzip.Gzip(gzip.DefaultCompression))

@@ -6,4 +6,4 @@ build:
 	go build -o bin
 
 exec:
-	cd ./bin; ./AInsight-Server.exe
+	cd ./bin; ./go-web-server-example.exe

@@ -10,8 +10,6 @@ import (
 
 var secret []byte
 
-// var cache map[string]*userManager.User = make(map[string]*userManager.User)
-
 func Init() {
 	secret = []byte(os.Getenv("SECRET"))
 	fmt.Printf("[Auth] secret: %s\n", secret)
