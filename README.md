@@ -6,6 +6,7 @@
 ### Included Services:
 - Web Service
 - Data API Service
+- Supported JWT Authorization
 - Supported AI Sevice
 - Supported RDBMS
 
