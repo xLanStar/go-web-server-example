@@ -40,10 +40,12 @@ func main() {
 	go startWatch()
 	defer watcher.Close()
 
-	// TEST
-	response, err := ai.SendMessage("Hello\na\ns0")
+	var data ai.RequestData = ai.RequestData{
+		Prompt:  "RD部門的六月支出是多少",
+		History: []string{"a", "b"},
+	}
+	response, _ := ai.Request(&data)
 	fmt.Println("response:", response)
-	fmt.Println("err:", err)
 
 	// 啟用 Web HTTP 服務
 	go server.ListenAndServe(":"+os.Getenv("WEB_PORT"), webRouter)

@@ -17,15 +17,15 @@ var (
 
 func initUserDB() {
 	fmt.Println("DB:", DB)
-	var err error
-	stmtCreateUser, err = DB.Prepare("INSERT INTO user(Account, Password) VALUES(?, ?)")
-	if err != nil {
-		panic(err)
-	}
-	stmtGetUserByAccount, err = DB.Prepare("SELECT * FROM user WHERE Account = ?")
-	if err != nil {
-		panic(err)
-	}
+	// var err error
+	// stmtCreateUser, err = DB.Prepare("INSERT INTO user(Account, Password) VALUES(?, ?)")
+	// if err != nil {
+	// 	panic(err)
+	// }
+	// stmtGetUserByAccount, err = DB.Prepare("SELECT * FROM user WHERE Account = ?")
+	// if err != nil {
+	// 	panic(err)
+	// }
 }
 
 func CreateUser(Account, Password string) *User {

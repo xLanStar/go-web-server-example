@@ -1,10 +1,12 @@
 # Web Server Example
 
 ### Better and faster way to use Gin framework
+### Using Optimized json, sync pool
 
 ### Included Services:
 - Web Service
 - Data API Service
+- Supported AI Sevice
 - Supported RDBMS
 
 ## How to use
@@ -33,7 +35,8 @@ DB_PASSWORD=password
 DB_DATABASE=database
 
 # AI 伺服器
-AI_PORT=:9000
+AI_HOST=localhost
+AI_PORT=9000
 
 # JWT Key
 SECRET=0123456789ABCDEFG
